@@ -42,8 +42,6 @@ ${consultant_input_field}    xpath://input[@class="select2-search__field"]
 ${bed_145}    xpath://div[text()='FF - 145']
 ${bed_status_save_button}    xpath://button[@id="formaddbtn"]
 ${admisstion_date_field}    xpath://input[@id="admission_date"]
-
-${bed_145}    xpath://div[text()='FF - 145']
 ${Addmision_date}    css:input[id="admission_date"]
 ${patientSelect_field}    xpath://span[@class="select2-selection select2-selection--single" and @aria-labelledby="select2-addpatient_id-container"]
 ${patientinput_field}    css:input[class="select2-search__field"]
