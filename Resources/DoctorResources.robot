@@ -42,15 +42,13 @@ ${consultant_input_field}    xpath://input[@class="select2-search__field"]
 ${bed_145}    xpath://div[text()='FF - 145']
 ${bed_status_save_button}    xpath://button[@id="formaddbtn"]
 ${admisstion_date_field}    xpath://input[@id="admission_date"]
-
-${bed_145}    xpath://div[text()='FF - 145']
 ${Addmision_date}    css:input[id="admission_date"]
 ${patientSelect_field}    xpath://span[@class="select2-selection select2-selection--single" and @aria-labelledby="select2-addpatient_id-container"]
 ${patientinput_field}    css:input[class="select2-search__field"]
 ${consultant_select_field}    xpath://span[@class="select2-selection select2-selection--single" and @aria-labelledby="select2-consultant_doctor-container"]
 ${bed_status_save_button}    css:button[id="formaddbtn"]
 ${doctal_consultant_select}    xpath://select[@id='consultant_doctor']
-${patient_name}    xpath://li[@class='select2-results__option select2-results__option--highlighted']
+${add_patient_name}    xpath://li[@class='select2-results__option select2-results__option--highlighted']
 
 
 *** Keywords ***
@@ -130,7 +128,7 @@ Successfull update of the bed status
     Click Element    ${bed_145}
     Click Element    ${patientSelect_field}
     Input Text    ${patientinput_field}   Evander  
-    Click Element    ${patient_name}
+    Click Element    ${add_patient_name}
     Click Element    ${Addmision_date}
     Select From List By Value   ${doctal_consultant_select}     11    
     Click Button    ${bed_status_save_button}
@@ -140,7 +138,7 @@ Unsuccessfull update of the bed status
     Click Element    ${bed_145}
     Click Element    ${patientSelect_field}
     Input Text    ${patientinput_field}   Olivier  
-    Click Element    ${patient_name}
+    Click Element    ${add_patient_name}
     Click Element    ${Addmision_date}
     Select From List By Value   ${doctal_consultant_select}     11    
     Click Button    ${bed_status_save_button}
